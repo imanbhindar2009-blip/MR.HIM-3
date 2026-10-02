@@ -1,666 +1,318 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Happy Boyfriend Day, GUPPU ♡</title>
-
-<style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #713b56;
-    background: linear-gradient(
-        135deg,
-        #fff1f7,
-        #ffd6e7,
-        #ffeaf3
-    );
-    min-height: 100vh;
-}
-
-.container {
-    width: 92%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 45px 0 70px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.84);
-    border: 1px solid #ffc5dc;
-    border-radius: 30px;
-    box-shadow: 0 15px 40px rgba(190, 78, 125, 0.12);
-    padding: 40px;
-    margin-bottom: 28px;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    text-align: center;
-    padding: 60px 25px;
-}
-
-.small-title {
-    color: #d95c91;
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-h1 {
-    font-family: Georgia, serif;
-    color: #c83f79;
-    font-size: clamp(42px, 8vw, 78px);
-    margin: 18px 0;
-}
-
-h2 {
-    font-family: Georgia, serif;
-    color: #c83f79;
-    font-size: 38px;
-    text-align: center;
-}
-
-.divider {
-    width: 80px;
-    height: 3px;
-    background: #ef76a9;
-    margin: 25px auto;
-    border-radius: 10px;
-}
-
-.subtitle {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-
-/* =========================
-   POEM
-========================= */
-
-.poem {
-    text-align: center;
-    line-height: 2;
-    font-size: 17px;
-    max-width: 730px;
-    margin: auto;
-}
-
-
-/* =========================
-   GALLERY
-========================= */
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.photo-card {
-    height: 310px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 22px;
-    background: #ffe2ee;
-    border: 2px solid #ffc0d9;
-}
-
-.photo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.photo-placeholder {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    color: #c35b89;
-}
-
-.nickname {
-    position: absolute;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-
-    background: rgba(255, 255, 255, 0.94);
-
-    padding: 10px;
-
-    border-radius: 15px;
-
-    text-align: center;
-
-    font-weight: bold;
-
-    color: #c23d77;
-}
-
-.note {
-    text-align: center;
-    font-size: 13px;
-    color: #9b617b;
-    margin-top: 18px;
-}
-
-
-/* =========================
-   LOVE BUTTON
-========================= */
-
-.love-section {
-    text-align: center;
-}
-
-button {
-    border: none;
-
-    border-radius: 999px;
-
-    padding: 17px 32px;
-
-    background: linear-gradient(
-        135deg,
-        #e95891,
-        #c93e79
-    );
-
-    color: white;
-
-    font-size: 17px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 12px 28px
-        rgba(201, 62, 121, 0.28);
-
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.05);
-}
-
-#loveMessage {
-    display: none;
-
-    font-family: Georgia, serif;
-
-    font-size: 45px;
-
-    color: #c83f79;
-
-    margin-top: 25px;
-
-    animation: appear 0.5s ease;
-}
-
-@keyframes appear {
-
-    from {
-        opacity: 0;
-        transform: scale(0.7);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    text-align: center;
-
-    color: #a75b7b;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .photo-card {
-        height: 360px;
-    }
-
-    .card {
-        padding: 25px 18px;
-    }
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Boyfriend Day, GUPPU ♡</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff0f6, #ffc1d9);
+            color: #6b2948;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 70px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #d63384;
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 25px;
+            padding: 35px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(180, 70, 120, 0.15);
+        }
+
+        .card h2 {
+            color: #d63384;
+            font-size: 30px;
+        }
+
+        .poem {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .photo-card {
+            background: white;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(180, 70, 120, 0.18);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .photo-card h3 {
+            color: #d63384;
+            margin-bottom: 5px;
+        }
+
+        .love-button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .love-button:hover {
+            transform: scale(1.05);
+            background: #b92568;
+        }
+
+        #loveMessage {
+            display: none;
+            font-size: 38px;
+            color: #d63384;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+
+        .hearts {
+            font-size: 25px;
+            margin: 15px;
+        }
+
+        footer {
+            padding: 40px 20px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .photo-card img {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
+    <div class="container">
 
-<div class="container">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hearts">♡ ♡ ♡</div>
 
+            <h1>Happy Boyfriend Day ♡</h1>
 
-<!-- ==================================
-     HERO
-================================== -->
+            <h2>My GUPPU 🎀</h2>
 
-<div class="card hero">
+            <p>
+                For the one who makes the distance feel a little smaller
+                and my days a little brighter.
+            </p>
 
-    <div class="small-title">
-        Happy Boyfriend Day ♡
-    </div>
+            <h2>Syed Abdul Hadi Shah ♡</h2>
 
+            <div class="hearts">♡ ♡ ♡</div>
+        </section>
 
-    <h1>
-        My GUPPU 🎀
-    </h1>
 
+        <!-- POEM -->
+        <section class="card">
 
-    <div class="divider"></div>
+            <h2>My Safe Space ♡</h2>
 
+            <div class="poem">
+                Across the miles and different skies,<br>
+                you are still the person my heart recognizes.<br><br>
 
-    <p class="subtitle">
+                Through every message and every call,<br>
+                somehow you make the distance feel small.<br><br>
 
-        Syed Abdul Hadi Shah ♡
+                Even when you're far away,<br>
+                you still make ordinary days feel special.<br><br>
 
-        <br><br>
+                You are someone I can laugh with,<br>
+                talk to, and simply be myself around.<br><br>
 
-        A little corner of the internet
-        made just for you.
+                Distance may separate us,<br>
+                but it will never make you feel far from my heart. ♡
+            </div>
 
-    </p>
+        </section>
 
-</div>
 
+        <!-- MESSAGE -->
+        <section class="card">
 
+            <h2>For You, GUPPU ♡</h2>
 
-<!-- ==================================
-     SAFE SPACE POEM
-================================== -->
-
-<div class="card">
-
-    <h2>
-        My Safe Space ♡
-    </h2>
-
-
-    <div class="poem">
-
-        Across the miles and different skies,<br>
-
-        you are still the person my heart recognizes.<br>
-
-        Through every message and every call,<br>
-
-        somehow you make the distance feel small.<br><br>
-
-
-        When my days get loud and everything feels too much,<br>
-
-        somehow your words still feel like a gentle touch.<br>
-
-        You became my comfort without even trying,<br>
-
-        my safe space, even from miles away.<br><br>
-
-
-        I wish I could shorten every mile between us,<br>
-
-        and turn every “I miss you” into “you're right here.”<br>
-
-        But until that day finally comes,<br>
-
-        I'll keep loving you through every distance.<br><br>
-
-
-        You are my favourite notification,<br>
-
-        my favourite conversation,<br>
-
-        and one of the sweetest parts of my life.<br><br>
-
-
-        So on Boyfriend Day,<br>
-
-        I just want you to know—<br>
-
-        distance may separate us,<br>
-
-        but it will never make you feel far from my heart. ♡
-
-    </div>
-
-</div>
-
-
-
-<!-- ==================================
-     LITTLE MESSAGE
-================================== -->
-
-<div class="card">
-
-    <h2>
-        For You, GUPPU ♡
-    </h2>
-
-
-    <div class="poem">
-
-        Thank you for being someone I can laugh with,
-        talk to, miss,
-        annoy,
-        and still come back to at the end of the day. ♡
-
-        <br><br>
-
-        Thank you for being my person
-        even when we're not in the same place.
-
-        <br><br>
-
-        If I could give you one thing today,
-        it would be the ability to see yourself
-        the way I see you.
-
-        <br><br>
-
-        Maybe then you'd understand
-        just how special you are to me.
-
-        ♡
-
-    </div>
-
-</div>
-
-
-
-<!-- ==================================
-     PHOTO GALLERY
-================================== -->
-
-<div class="card">
-
-    <h2>
-        My Favourite Photos of You ♡
-    </h2>
-
-
-    <div class="gallery">
-
-
-        <!-- PHOTO 1 -->
-
-        <div class="photo-card">
-
-            <div class="photo-placeholder">
-
-                Add his photo here
-
+            <p style="font-size: 19px; line-height: 1.8;">
+                Happy Boyfriend Day to someone who means so much to me. ♡
                 <br><br>
 
-                <b>hadi1.jpg</b>
-
-            </div>
-
-
-            <div class="nickname">
-
-                GUPPU 🎀
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PHOTO 2 -->
-
-        <div class="photo-card">
-
-            <div class="photo-placeholder">
-
-                Add his photo here
-
+                Thank you for being my comfort person,
+                for making me smile, and for being someone
+                I can always look forward to talking to.
                 <br><br>
 
-                <b>hadi2.jpg</b>
-
-            </div>
-
-
-            <div class="nickname">
-
-                My Favourite Human ♡
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PHOTO 3 -->
-
-        <div class="photo-card">
-
-            <div class="photo-placeholder">
-
-                Add his photo here
-
+                Even with the distance between us,
+                you still manage to make me feel close to you.
                 <br><br>
 
-                <b>hadi3.jpg</b>
+                This little website is just a tiny reminder
+                of how special you are to me. 🎀
+            </p>
+
+        </section>
+
+
+        <!-- PHOTO GALLERY -->
+        <section class="card">
+
+            <h2>Our Little Gallery ♡</h2>
+
+            <p>
+                A few pictures of my favourite person. 🎀
+            </p>
+
+            <div class="gallery">
+
+                <!-- PHOTO 1 -->
+                <div class="photo-card">
+                    <img
+                        src="174539E5-9E82-470D-8142-1521B31E78CB.jpeg"
+                        alt="GUPPU 🎀">
+                    <h3>GUPPU 🎀</h3>
+                </div>
+
+
+                <!-- PHOTO 2 -->
+                <div class="photo-card">
+                    <img
+                        src="3949D27F-67A4-4522-848A-6CBF336B1FEF.jpeg"
+                        alt="My Favourite Human">
+                    <h3>My Favourite Human ♡</h3>
+                </div>
+
+
+                <!-- PHOTO 3 -->
+                <div class="photo-card">
+                    <img
+                        src="98DA5AA6-EB7F-4572-9A72-D7376AA62D65.jpeg"
+                        alt="My Comfort Person">
+                    <h3>My Comfort Person ♡</h3>
+                </div>
+
+
+                <!-- PHOTO 4 -->
+                <div class="photo-card">
+                    <img
+                        src="IMG_4276.jpeg"
+                        alt="Mr. Special">
+                    <h3>Mr. Special ♡</h3>
+                </div>
+
+
+                <!-- PHOTO 5 -->
+                <div class="photo-card">
+                    <img
+                        src="IMG_4277.jpeg"
+                        alt="My Safe Space">
+                    <h3>My Safe Space ♡</h3>
+                </div>
+
+
+                <!-- PHOTO 6 -->
+                <div class="photo-card">
+                    <img
+                        src="IMG_4278.jpeg"
+                        alt="My Cutie">
+                    <h3>My Cutie ♡</h3>
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="nickname">
 
-                My Comfort Person ♡
+        <!-- LOVE BUTTON -->
+        <section class="card">
 
+            <h2>One More Thing... ♡</h2>
+
+            <button class="love-button" onclick="showLove()">
+                CLICK HERE ♡
+            </button>
+
+            <div id="loveMessage">
+                LOVE YOU ♡
             </div>
 
-        </div>
+        </section>
 
 
-
-        <!-- PHOTO 4 -->
-
-        <div class="photo-card">
-
-            <div class="photo-placeholder">
-
-                Add his photo here
-
-                <br><br>
-
-                <b>hadi4.jpg</b>
-
-            </div>
-
-
-            <div class="nickname">
-
-                Mr. Special ♡
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PHOTO 5 -->
-
-        <div class="photo-card">
-
-            <div class="photo-placeholder">
-
-                Add his photo here
-
-                <br><br>
-
-                <b>hadi5.jpg</b>
-
-            </div>
-
-
-            <div class="nickname">
-
-                My Safe Space ♡
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PHOTO 6 -->
-
-        <div class="photo-card">
-
-            <div class="photo-placeholder">
-
-                Add his photo here
-
-                <br><br>
-
-                <b>hadi6.jpg</b>
-
-            </div>
-
-
-            <div class="nickname">
-
-                My Cutie ♡
-
-            </div>
-
-        </div>
-
+        <!-- FOOTER -->
+        <footer>
+            Made with love for GUPPU 🎀 ♡
+        </footer>
 
     </div>
 
 
-    <p class="note">
+    <script>
 
-        Put his photos in the
-        <b>photos</b>
-        folder using the names
-        hadi1.jpg, hadi2.jpg, etc.
+        function showLove() {
+            document.getElementById("loveMessage").style.display = "block";
+        }
 
-    </p>
-
-</div>
-
-
-
-<!-- ==================================
-     FINAL BUTTON
-================================== -->
-
-<div class="card love-section">
-
-    <h2>
-
-        One Last Thing...
-
-    </h2>
-
-
-    <p>
-
-        I have one very important thing
-        I need you to know.
-
-    </p>
-
-
-    <br>
-
-
-    <button onclick="showLove()">
-
-        CLICK HERE ♡
-
-    </button>
-
-
-    <div id="loveMessage">
-
-        LOVE YOU ♡
-
-    </div>
-
-</div>
-
-
-
-<footer>
-
-    Made especially for
-    Syed Abdul Hadi Shah
-    ♡
-
-    <br><br>
-
-    Happy Boyfriend Day, GUPPU 🎀
-
-</footer>
-
-
-</div>
-
-
-
-<script>
-
-function showLove() {
-
-    document.getElementById("loveMessage").style.display = "block";
-
-}
-
-</script>
-
+    </script>
 
 </body>
-
 </html>
-```
