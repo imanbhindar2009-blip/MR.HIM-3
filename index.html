@@ -214,8 +214,22 @@
 
         <strong>Hadi Shah,<br>
         will you become my one and only jaanaana? ♡</strong>
+          <div style="margin-top: 25px;">
 
-    </div>
+            <button class="love-button" onclick="sayYes()">
+                YES ♡
+            </button>
+
+            <button class="love-button" onclick="sayYes()">
+                YES ♡
+            </button>
+
+        </div>
+
+        <div id="yesMessage"
+             style="display: none; margin-top: 25px; font-size: 25px; color: #d63384; font-weight: bold;">
+            I KNEW YOU'D SAY YES 😭🎀♡
+        </div>
 
 </section>
 
@@ -340,11 +354,15 @@
 
     <script>
 
-        function showLove() {
-            document.getElementById("loveMessage").style.display = "block";
-        }
+    function showLove() {
+        document.getElementById("loveMessage").style.display = "block";
+    }
 
-    </script>
+    function sayYes() {
+        document.getElementById("yesMessage").style.display = "block";
+    }
+
+</script>
 
 </body>
 </html>
